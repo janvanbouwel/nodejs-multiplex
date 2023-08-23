@@ -1,0 +1,37 @@
+{
+  "name": "@janvanbouwel/multiplex",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Multiplexes multiple independent streams over one stream.",
+  "exports": "./dist/index.js",
+  "author": "Jan Van Bouwel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janvanbouwel/nodejs-multiplex.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "node dist/test.js",
+    "build": "rimraf dist/ && tsc",
+    "eslint": "eslint src",
+    "prettier": "npx prettier . --write"
+  },
+  "devDependencies": {
+    "@sindresorhus/tsconfig": "^4.0.0",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "eslint": "^8.47.0",
+    "prettier": "3.0.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@janvanbouwel/chunked-stream": "^0.2.2"
+  }
+}
